@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phaser 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="user-form">
+    <div id="button-container">
+        <button id="login-form-button" class="active">Login</button>
+        <button id="registration-form-button">Register</button>
+    </div>
+    <div id="login" class="form-container active">
+        <form id="login-form">
+            <input type="text" name="username-login" id="username-login" placeholder="Username">
+            <input type="password" name="password-login" id="password-login" placeholder="Password">
+            <input type="submit" id="login-button" value="Login">
+        </form>
+    </div>
+    <div id="registration" class="form-container">
+        <form id="registration-form">
+            <input type="text" name="username" id="username-registration" placeholder="Username">
+            <input type="password" name="password" id="password-registration" placeholder="Password">
+            <input type="password" name="password-confirm" id="confirm-password-registration" placeholder="Confirm password">
+            <input type="submit" id="registration-button" value="Register">
+        </form>
+    </div>
+    <a href="#" id="play-offline-button">Play offline</a>
+</div>
+<div id="form-backlight"></div>
+<script src="./bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: #000;
+    position: relative;
+}
+
+#user-form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 150px);
+    margin: 0 auto;
+    width: 250px;
+    background-color: #333;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    padding: 10px;
+    z-index: 20;
+}
+
+#form-backlight {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: #777;
+    z-index: 10;
+    opacity: 0.5;
+}
+
+canvas:not(.active) {
+    filter: blur(3px);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.form-container {
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+}
+
+input {
+    width: 200px;
+    padding: 5px;
+    margin: 7px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type='submit'] {
+    float: left;
+    width: 100px;
+    background-color: greenyellow;
+    margin-right: -110px;
+}
+
+button {
+    border: none;
+    background: none;
+    color: #eee;
+    font-size: 15px;
+    padding: 10px;
+}
+
+button.active {
+    border: 1px gray solid;
+}
+
+#button-container {
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#play-offline-button {
+    font-size: 13px;
+    margin-right: 120px;
+}
