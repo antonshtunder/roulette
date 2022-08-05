@@ -74,7 +74,7 @@ export default class RouletteGame extends Phaser.Scene {
             document.getElementById('login-form-button').classList.add('active');
             document.getElementById('registration-form-button').classList.remove('active');
         };
-        document.getElementById('login-button').onclick = async () => {
+        document.getElementById('login-button').onclick = async (e) => {
             e.preventDefault();
             let result = await this._rouletteServerClient.makeLoginRequest(
                 (<HTMLInputElement>document.getElementById('username-login')).value,
